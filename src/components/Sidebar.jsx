@@ -1,13 +1,14 @@
 import styles from './Sidebar.module.css'
 import { PencilLine } from 'phosphor-react'
 import capa from '../assets/capa.png'
+import { Avatar } from './Avatar'
 export function Sidebar() {
     return (
         <aside className={styles.sidebar}>
             <img className={styles.cover} src={capa} alt="Capa" />
 
             <div className={styles.profile}>
-                <img className={styles.avatar} src="https://github.com/lumoura0.png" />
+                <Avatar src="https://github.com/lumoura0.png" />
                 <strong>Luis Fernando</strong>
                 <span>Web Developer</span>
             </div>
